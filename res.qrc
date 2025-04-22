@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/bg1.png</file>
+        <file>res/bg2.png</file>
+        <file>res/bg3.png</file>
+        <file>res/List.png</file>
+        <file>res/Music.png</file>
+        <file>res/Next.png</file>
+        <file>res/Order.png</file>
+        <file>res/Play.png</file>
+        <file>res/Pre.png</file>
+        <file>res/Radom.png</file>
+        <file>res/Stop.png</file>
+        <file>res/HyuN - Grin.mp3</file>
+        <file>res/Circle.png</file>
+        <file>res/wyyyy.png</file>
+        <file>res/mute.png</file>
+        <file>res/volume.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ICON/Music.png</file>
+        <file>ICON/Next.png</file>
+        <file>ICON/Order.png</file>
+        <file>ICON/Play.png</file>
+        <file>ICON/Pre.png</file>
+        <file>ICON/Radom.png</file>
+        <file>ICON/Stop.png</file>
+        <file>ICON/List.png</file>
+        <file>ICON/bg1.png</file>
+        <file>ICON/bg2.png</file>
+        <file>ICON/bg3.png</file>
+        <file>resources/Hinkik - Outbreaker.mp3</file>
+        <file>resources/Hinkik - Time Leaper.mp3</file>
+        <file>resources/HyuN - Grin.mp3</file>
+        <file>ICON/Hinkik - Outbreaker.mp3</file>
+        <file>ICON/Hinkik - Time Leaper.mp3</file>
+        <file>ICON/HyuN - Grin.mp3</file>
+        <file>ICON/Kirara Magic - Dragonflame.mp3</file>
+        <file>ICON/ZsFlovexl - Night Crusing x Time to Pretend.mp3</file>
+    </qresource>
+</RCC>

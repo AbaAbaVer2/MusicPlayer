@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1020</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QSlider::groove:horizontal {
+    border: none;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #f0f0f0;  /* 更浅的灰色背景 */
+}
+    
+QSlider::handle:horizontal {
+    background-color: #ffffff;  /* 白色进度球 */
+    border: 1px solid #dddddd;  /* 更浅的边框 */
+    width: 14px;
+    height: 14px;
+    margin: -4px 0;
+    border-radius: 7px;
+}
+    
+QSlider::sub-page:horizontal {
+    background-color: #7986cb;  /* 更浅的紫蓝色已播放部分 */
+    border: none;
+    height: 6px;
+    border-radius: 3px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>600</y>
+      <width>441</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="listBtn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="prevBtn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="playBtn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="nextBtn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="modelBtn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QListWidget" name="musicList">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>10</y>
+      <width>256</width>
+      <height>521</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>570</y>
+      <width>411</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="currentTime">
+       <property name="text">
+        <string>00：00</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="progressBar">
+       <property name="styleSheet">
+        <string notr="true">QSlider::groove:horizontal {
+    border: none;
+    height: 10px;
+    border-radius: 5px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #1c1c1c, stop:1 #2f2f2f);
+}
+    
+QSlider::handle:horizontal {
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 #ffffff, stop:1 #7986cb);
+    width: 16px;
+    height: 16px;
+    margin: -3px 0;
+    border-radius: 8px;
+}
+    
+QSlider::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #5e35b1, stop:1 #7986cb);
+    border: none;
+    height: 10px;
+    border-radius: 5px;
+}</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="totalTime">
+       <property name="text">
+        <string>03：21</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QSlider" name="volumeSlider">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>430</y>
+      <width>16</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal {
+            height: 5px;
+            background: #e0e0e0;
+            border-radius: 2px;
+        }
+        QSlider::handle:horizontal {
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            width: 12px;
+            height: 12px;
+            margin: -4px 0;
+            border-radius: 6px;
+        }
+        QSlider::sub-page:horizontal {
+            background: #5e35b1;
+            border-radius: 2px;
+        }</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="muteBtn">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>610</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>319</y>
+      <width>71</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="volumeLabel">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>590</y>
+      <width>40</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1020</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
